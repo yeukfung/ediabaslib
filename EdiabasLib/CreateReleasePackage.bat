@@ -3,7 +3,7 @@ SETLOCAL EnableDelayedExpansion
 
 set BATPATH=%~dp0
 
-set DATESTR=%date:~6,4%%date:~3,2%%date:~0,2%
+set DATESTR=%date:~10,4%%date:~4,2%%date:~7,2%
 echo !DATESTR!
 set PACKAGEPATH="!BATPATH!Package\"
 set EDIABASTESTPATH="!PACKAGEPATH!EdiabasTest\"
@@ -14,6 +14,8 @@ set CANADAPTERELMPATH="!PACKAGEPATH!CanAdapterElm\"
 set ENETADAPTERPATH="!PACKAGEPATH!EnetAdapter\"
 set ANDROIDSAMPLEPATH="!PACKAGEPATH!AndroidSamples\"
 set ECUPATH="!PACKAGEPATH!Ecu\"
+set PATH_7ZIP=C:\Program Files\7-Zip
+
 if exist "!PACKAGEPATH!" rmdir /s /q "!PACKAGEPATH!"
 timeout /T 1 /NOBREAK > nul
 mkdir "!PACKAGEPATH!"

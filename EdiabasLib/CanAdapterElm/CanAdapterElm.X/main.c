@@ -14,7 +14,7 @@
 #include "can.h"
 
 #if _HTC_EDITION_ != 2
-#error Compiler is not PRO mode, generated code will be too slow
+//#error Compiler is not PRO mode, generated code will be too slow
 #endif
 
 // #pragma config statements should precede project file includes.
